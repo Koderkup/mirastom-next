@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import Head from "next/head";
-import Meta from "@/components/Meta";
 import s from "../../styles/works.module.scss";
 export default function Works() {
   const [showArrow, setShowArrow] = useState(false);
@@ -25,7 +23,6 @@ export default function Works() {
 
   return (
     <>
-      <Meta />
       <>
         <div className={s.works}>
           <h1 className={s.works__title}>

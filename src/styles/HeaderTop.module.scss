@@ -1,0 +1,48 @@
+.header_top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: grey;
+
+    .header_top__social_media {
+        display: flex;
+    }
+
+    .header_top__item {
+        display: flex;
+        align-items: center;
+span {
+    text-align: center;
+}
+        .header_top__icon {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        margin-top: 40%;
+    }
+
+    .header_top__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .header_top__icon {
+        margin-bottom: 5px;
+    }
+}

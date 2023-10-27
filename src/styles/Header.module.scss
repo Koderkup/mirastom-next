@@ -1,0 +1,26 @@
+.header {
+    // height: 30em;
+    width: 100%;
+    // margin-bottom: 12em;
+}
+
+.layout {
+    position: relative;
+    height: 30em;
+    width: 100%;
+    margin-bottom: 12em;
+}
+
+.layout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://res.cloudinary.com/dlr2olc8r/image/upload/v1698122709/test/dqoenfqp6kpphzjh1ehn.jpg");
+    opacity: 0.25;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

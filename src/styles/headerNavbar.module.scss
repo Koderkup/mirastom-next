@@ -1,0 +1,73 @@
+@import './colors.scss';
+
+.header_navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0 20px;
+        gap: 8em;
+        font-size: 22px;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #279FDB;
+        transition: transform 0.3s ease-in-out;
+        white-space: nowrap;
+
+        &.active {
+            text-decoration: underline;
+            color: #B34EE9;
+        }
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: large;
+
+}
+
+.modal-form button {
+    font-size: 22px;
+    background-color: #00BFFF;
+    width: 150px;
+    height: 40px;
+    color: wheat;
+    border-radius: 5px;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.modal-form input {
+    width: 100%;
+    height: 3em;
+
+}
+
+.sup {
+    color: white;
+    background-color: $shadow-brown-80;
+    border-radius: 12px;
+    padding: 1px;
+}
